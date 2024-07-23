@@ -17,7 +17,6 @@
 		<revision>0-SNAPSHOT</revision>
 
 		<gatling.version>3.11.5</gatling.version>
-		<liquibase.sessionlock.version>1.6.9</liquibase.sessionlock.version>
 
 		<!-- Plugin Versions -->
 		<gatling-maven-plugin.version>4.9.6</gatling-maven-plugin.version>
@@ -46,11 +45,6 @@
 		<dependency>
 			<groupId>org.liquibase</groupId>
 			<artifactId>liquibase-core</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.github.blagerweij</groupId>
-			<artifactId>liquibase-sessionlock</artifactId>
-			<version>${liquibase.sessionlock.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
