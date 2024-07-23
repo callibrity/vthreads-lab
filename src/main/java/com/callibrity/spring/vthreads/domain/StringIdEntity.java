@@ -6,8 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Version;
 import lombok.Getter;
-import org.apache.commons.lang3.builder.EqualsBuilder;
-import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
@@ -52,17 +51,14 @@ public abstract class StringIdEntity {
 
     @Override
     public final boolean equals(Object o) {
-        if (!(o instanceof StringIdEntity)) return false;
+        if (this == o) return true;
+        if (!(o instanceof StringIdEntity that)) return false;
 
-        StringIdEntity that = (StringIdEntity) o;
-
-        return new EqualsBuilder().append(id, that.id).isEquals();
+        return id.equals(that.id);
     }
 
     @Override
-    public final int hashCode() {
-        return new HashCodeBuilder(17, 37).append(id).toHashCode();
+    public int hashCode() {
+        return id.hashCode();
     }
-
-
 }
