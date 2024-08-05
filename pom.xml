@@ -17,7 +17,7 @@
 		<revision>0-SNAPSHOT</revision>
 
 		<gatling.version>3.11.5</gatling.version>
-		<liquibase.version>4.23.0</liquibase.version>
+		<liquibase.version>4.29.1</liquibase.version>
 		<liquibase.sessionlock.version>1.6.9</liquibase.sessionlock.version>
 
 		<!-- Plugin Versions -->
