@@ -21,7 +21,7 @@
 		<liquibase.sessionlock.version>1.6.9</liquibase.sessionlock.version>
 
 		<!-- Plugin Versions -->
-		<gatling-maven-plugin.version>4.9.6</gatling-maven-plugin.version>
+		<gatling-maven-plugin.version>4.10.0</gatling-maven-plugin.version>
 
 
 		<image.name>ghcr.io/callibrity/vthreads-lab:${project.version}</image.name>
